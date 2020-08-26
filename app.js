@@ -10,7 +10,7 @@ const app=express();
 mongoose.connect(url,{useNewUrlParser:true})
 const con=mongoose.connection
 
-const alienRouter=require("./routers/aliens");
+const alienRouter=require("./routes/aliens");
 app.use("/aliens",alienRouter);
 
 
