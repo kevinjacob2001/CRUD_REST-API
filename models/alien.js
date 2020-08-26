@@ -6,3 +6,5 @@ const alienSchema=new mongoose.Schema({
     sub:{type:Boolean,required:true,default:false}
 })
 
+
+module.exports=mongoose.model("Alien",alienSchema);
