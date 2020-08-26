@@ -44,7 +44,7 @@ res.send("Error")
 router.patch("/:id",async(req,res)=>{
     try{
 const alien=await Alien.findById(req.params.id)
-alien.sub=req.body.sub
+alien.sub=req.body.sub  //PATCH req. only for the "sub" key
 const a1=await alien.save()
 res.json(a1)
     }
