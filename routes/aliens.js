@@ -13,4 +13,21 @@ router.get("/",async(req,res)=>{
     }
 })
 
+router.post("/",async(req,res){
+    const alien=new Alien({
+        name:req.body.name,
+        tech:req.body.tech,
+        sub:req.body.sub
+    })
+try{
+
+}
+
+catch(err){
+res.send("Error")
+}
+
+})
+
+
 module.exports=router;
